@@ -1,0 +1,104 @@
+/* Resetting default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom, 
+        rgba(173, 216, 230, 0.8), 
+        rgba(66, 114, 131, 0.8),
+        rgba(173, 216, 230, 0.8),
+        rgba(11, 44, 55, 0.4)
+    );
+    background-size: cover;
+}
+
+/* Container for login form */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    /* width: 350px; */
+    text-align: center;
+}
+
+/* Form heading */
+h2 {
+    margin-bottom: 20px;
+    color: #1767c5;
+    font-size: 1.8em;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Labels for form fields */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    color: #033537;
+}
+
+/* Input fields styling */
+input[type="text"], input[type="password"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/* Login button */
+.login-button {
+    width: 60%; /* Login button width */
+    padding: 12px 0;
+    background-color: #1767c5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+/* Hover effect for login button */
+.login-button:hover {
+    background-color: #033537;
+    transform: translateY(-3px);
+}
+
+@media screen and (max-width: 560px) {
+    .login-container{
+        margin: 0% 5%;
+    }
+}
+
+/* Add styles for photo preview */
+#photo-preview {
+    height: 30%;
+    width: 30%;
+    margin-top: 15px;
+    border: 2px solid #ccc;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.camera-container{
+    width: 265px;
+    height: auto;
+}
+
+.camera-container #camera-stream{
+    width: 100%;
+}

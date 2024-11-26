@@ -1,0 +1,64 @@
+/* Resetting default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.container {
+    text-align: center;
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+
+#welcome-text{
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #126c62;
+    text-shadow: 2px 2px 5px #7490b0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.login-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #1767c5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.login-button:hover {
+    background-color: #033537;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 560px) {
+    .button-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-button{
+        width: 70%;
+        font-size: 1rem;
+        align-self: center;
+    }
+}
+
+

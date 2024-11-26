@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Login</title>
+    <link rel="stylesheet" href="assets/employee-login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Employee Login</h2>
+        <form action="#" method="POST">
+            <!-- User ID Field -->
+            <div class="form-group">
+                <label for="user-id">User ID:</label>
+                <input type="text" id="user-id" name="user-id" required>
+            </div>
+            
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <!-- Camera Access Button -->
+            <div class="form-group">
+                <label for="camera-button">Take a Photo:</label>
+                <button type="button" id="camera-button">Open Camera</button>
+            </div>
+            
+            <!-- Camera Preview and Capture -->
+            <div class="camera-container">
+                <video id="camera-stream" autoplay playsinline style="display: none;"></video>
+                <canvas id="photo-canvas" style="display: none;"></canvas>
+                <img id="photo-preview" alt="Photo Preview" style="display: none; margin-top: 10px; width: 100%; height: auto; border-radius: 5px;">
+                <button type="button" id="capture-button" style="display: none;">Capture Photo</button>
+            </div>
+            
+            <!-- Login Button -->
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    </div>
+
+<script src="assets/JS/employee-login.js"></script>
+</body>
+</html>
